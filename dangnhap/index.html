@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bg-music" autoplay loop>
+        <source src="mylove.mp3" type="audio/mpeg">
+    </audio>
+    <div class="login-box">
+        <h1>Đăng Nhập</h1>
+        <form id="loginForm">
+            <div class="textbox">
+                <label for="username"><i class="fas fa-user"></i></label>
+                <input type="text" placeholder="Tên đăng nhập" id="username" name="username" required>
+            </div>
+            <div class="textbox">
+                <label for="password"><i class="fas fa-lock"></i></label>
+                <input type="password" placeholder="Mật khẩu" id="password" name="password" required>
+            </div>
+            <div class="remember-me">
+                <input type="checkbox" id="rememberMe"> <label for="rememberMe">Nhớ đăng nhập</label>
+            </div>
+            <input type="submit" class="btn" value="Đăng nhập">
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
