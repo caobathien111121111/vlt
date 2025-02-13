@@ -1,0 +1,103 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url('nen.jpg');
+    font-family: 'Ubuntu', sans-serif;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    height: 600px; /* Đủ chỗ chứa phần quà */
+    text-align: center;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Thanh tiến trình */
+.progress-bar-container {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #ff4d6d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.2s ease-in-out;
+}
+
+/* Chữ Loading nằm trong thanh tiến trình */
+#loading-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+/* Chữ "Ấn vào phần quà nè" */
+#gift-text {
+    display: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffeb3b;
+    text-align: center;
+    margin-top: 10px;
+    animation: blink 1s infinite;
+}
+
+/* Hiệu ứng nhấp nháy */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Nút Phần quà */
+#gift-btn {
+    display: none; /* Ẩn ban đầu */
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: #ff5722;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+
+#gift-btn:hover {
+    background: #e64a19;
+}

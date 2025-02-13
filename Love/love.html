@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Love Loader</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,300" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="loader">
+        <canvas width="480" height="480" id="loader"></canvas>
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progress-bar">
+                <span id="loading-text">Loading <span id="percentage">0%</span></span>
+            </div>
+        </div>
+        <p id="gift-text">Ấn vào phần quà nè 🎁</p>
+        <button id="gift-btn" onclick="goToNextPage()">🎁 Phần quà 🎁</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
